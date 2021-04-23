@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reprograma - Calculadora Projetos</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+  </head>
+  <body>
+    <nav class="barra-navegacao">
+      <img
+        class="barra-navegacao__logotipo"
+        src="img/logotipo-reprograma.png"
+      />
+    </nav>
+    <header class="cabecalho">
+      <h1 class="cabecalho__titulo">Calculadora Projetos</h1>
+    </header>
+    <main class="conteudo-principal">
+      <section class="secao secao-hora">
+        <article class="secao__conteudo">
+          <div class="secao__formulario">
+            <fieldset>
+              <legend>Quanto você cobra por hora trabalhada?</legend>
+              <div class="secao__formulario__grupo">
+                <label for="valor-hora">Valor por hora</label>
+                <input type="number" id="valor-hora" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Quantas horas você trabalhou no projeto?</legend>
+              <div class="secao__formulario__grupo">
+                <label for="horas-projeto">Horas no projeto</label>
+                <input type="number" id="horas-projeto" />
+              </div>
+            </fieldset>
+            <button onclick="calcular()">Calcular</button>
+          </div>
+        </article>
+        <footer class="secao__rodape">
+          <h3 class="secao__rodape__valor">
+            <span id="resposta">R$ </span><small>/projeto</small>
+          </h3>
+          <p class="secao__rodape__legenda">Seu valor total no projeto</p>
+        </footer>
+      </section>
+
+    </main>
+    <footer class="rodape">Feito com muito <a href="index.html">♥</a></footer>
+
+    <script type="text/javascript" src="js/desafio.js"></script>
+  </body>
+</html>
